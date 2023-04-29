@@ -1,0 +1,88 @@
+html{
+	background-image: linear-gradient(#ddd,80%,#999);
+	min-height: 100vh;
+}
+body{
+	font-family: comfortaa,sans-serif ;
+	font-weight: bold;
+}
+header{
+	display: flex;
+}
+header p{
+	display: inline-block;
+}
+.playerData p{
+	padding: 0 1em;
+}
+header p,#prompt{
+	font-size: 2rem;
+	vertical-align: middle;
+}
+header>*{
+	flex: 1;
+}
+#grid button{
+	width: 20vw;
+	height: 20vw;
+	font-size: 3rem;
+	margin: 2px;
+	border: 0px solid ;
+	border-radius: 0.2em;
+	box-shadow: 0 0 15px #aaa;
+	color: #666;
+}
+#grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: min-content;
+	margin: auto;
+}
+
+#controls{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+input,button{
+	os-appearance: none;
+	-webkit-appearance: none;
+}
+#prompt,header *{
+	text-align: center;
+}
+input[type="text"]{
+	background-color: #f7f7f7;
+	color: #666;
+	border-radius: 1.2em;
+	line-height: 2.5em;
+	border: 0px solid #bbbbbb;
+	box-shadow: #bbb 0px 0px 7px;
+}
+#p1data>p{
+	color: red;
+}
+#p2data>p{
+	color: blue;
+}
+#restart{
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0.6em 0.9em;
+	border: 0px;
+	border-radius: 1.2em;
+	color: white;
+	background-color: #5555ff;
+}
+#restart:hover,#restart:focus{
+	box-shadow: 0 0 20px yellow;
+}
+#restart:active{
+	border: solid 2px white;
+}
+@media screen and (min-width:600px){
+	#grid button{
+		width: 10vw;
+		height: 10vw;
+	}
+}

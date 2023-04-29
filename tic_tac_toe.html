@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tic Tac Toe</title>
+		<link href="style.css" rel="stylesheet">
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="playerData" id="p1data">
+				<p>X</p>
+				<input class="name_input" id="p1name" type="text" value="Player 1">
+			</div>
+			<p>V/S</p>
+			<div class="playerData" id="p2data">
+				<p>O</p>
+				<input class="name_input" id="p2name" type="text" value="Player 2">
+			</div>
+		</header>
+		<div id="controls">
+			<button id="restart">Restart</button>
+		</div>
+		<p id="prompt"></p>
+		<div id="grid">
+			<button class="r0 c0 dp" id="b00"></button>	<button class="r0 c1" id="b01"></button>		<button class="r0 c2 ds" id="b02"></button>
+			<button class="r1 c0" id="b10"></button>	<button class="r1 c1 dp ds" id="b11"></button>	<button class="r1 c2" id="b12"></button>
+			<button class="r2 c0 ds" id="b20"></button>	<button class="r2 c1" id="b21"></button>		<button class="r2 c2 dp" id="b22"></button>
+		</div>
+	<body>
+</html>
